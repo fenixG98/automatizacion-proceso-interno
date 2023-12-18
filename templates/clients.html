@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>RSD versió WEB</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <!-- <link rel="icon" href="https://raw.githubusercontent.com/xxxxxxxxxxx/assets/master/logo.png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="columna">
+
+    </div>
+    <div class="columna">
+        <br/>
+        <!-- <img src="https://raw.githubusercontent.com/xxxxxxxxxxx/assets/master/logo.png" alt="LOGO_EMPRESA"> -->
+        <p>Llistat clients</p>
+        <div class="clients">
+            {% for client in clients %}
+                <table class="taula">
+                    <tr>
+                        <td>{{client}}</td>
+                        <td>{{ clients[client] }}</td>
+                    </tr>
+                </table>
+            {% endfor %}
+
+        </div>
+        <br/>
+        <form action="{{ url_for('editar') }}">
+            <button>EDITAR O AFEGIR E</button>
+        </form>
+        <br>
+    </div>
+</body>
+</html>

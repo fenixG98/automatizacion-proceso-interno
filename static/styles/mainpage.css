@@ -1,0 +1,111 @@
+p{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 50px;
+    color: white;
+
+}
+h1,form {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: white;
+}
+.clients{
+    text-align: center;
+    font-family: 'Montserrat';
+    color: white;
+}
+.taula{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid white;
+    text-align:center;
+}
+body {
+    font-family: 'FontAwesome', sans-serif;
+    background-color: #e4241c;
+    margin: 0 auto;
+    line-height: 50px;
+}
+label{
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+button {
+    font-family: 'Montserrat';
+    background-color: white;
+    border: none;
+    color: #e4241c;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 15px;
+}
+input {
+    font-family: 'Montserrat';
+    background-color: #e4241c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.input-file {
+    font-family: 'Montserrat';
+    background-color: #e4241c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.text-editar{
+    font-family: "Consolas", monospace;
+    background-color: #e4241c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+img {
+    display:block;
+    margin:auto;
+}
+.input {
+    font-family: 'Montserrat';
+    background-color: #e4241c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    height: auto;
+    width: 100vw;
+    padding-top: 5px;
+    color: #fff;
+}

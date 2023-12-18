@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>RSD versió WEB</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <!-- <link rel="icon" href="https://raw.githubusercontent.com/xxxxxxxxxxx/assets/master/logo.png"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="columna">
+        <br/>
+        <!-- <img src="https://raw.githubusercontent.com/xxxxxxxxxxx/assets/master/logo.png" alt="LOGO_EMPRESA"> -->
+        <p>Editar o afegir clients</p>
+        <form enctype=multipart/form-data method="POST">
+            <div>
+                <label for="file">Selecciona fitxer de clients: </label>
+                <br>
+                <input class="input-file" type="file" name="file">
+            </div>
+            <div>
+                <label for="client">O bé, introdueix client: </label>
+                <br>
+                <input class="input" type="text" name="client">
+            </div>
+            <div>
+                <label for="E">Introdueix E: </label>
+                <br>
+                <input class="input" type="text" name="E">
+            </div>
+            <br/>
+            <div>
+                <button type="submit">EDITAR O AFEGIR E</button>
+            </div>
+        </form>
+        <br>
+        <form action="{{ url_for('easter_egg') }}">
+            <button type="submit">GENERAR INFORME</button>
+        </form>
+    </div>
+</body>
+</html>
+
